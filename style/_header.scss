@@ -1,0 +1,50 @@
+nav.navbar {
+  background-color: #272727;
+  height: 102px;
+  .navbar-collapse {
+    background-color: #272727;
+   
+  }
+  a.navbar-brand {
+    margin-left: 46px;
+  }
+  li a {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-airbnb-bold;
+    font-size: 18px;
+  }
+  li.active {
+    a {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #55d97c;
+        height: 6px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .nav-link {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  div.navbar-collapse.text-right {
+    margin-right: 97px;
+    img {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.navbar div.navbar-collapse.text-right {
+    margin-right: 0px;
+    text-align: center !important;
+  }
+}

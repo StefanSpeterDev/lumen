@@ -1,0 +1,14 @@
+html, body {
+  font-family: $font-airbnb-normal;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+@mixin btn-grey {
+  background-color: $grey;
+  border-radius: 25px;
+  color: $white;
+  text-transform: uppercase;
+}
