@@ -1,9 +1,13 @@
-html, body {
+html,
+body {
   font-family: $font-airbnb-normal;
   margin: 0;
   padding: 0;
   overflow: auto;
   overflow-x: hidden;
+}
+span.bold {
+  font-family: $font-airbnb-bold;
 }
 
 @mixin btn-grey {
@@ -11,4 +15,36 @@ html, body {
   border-radius: 25px;
   color: $white;
   text-transform: uppercase;
+}
+
+footer {
+  background-color: #272727;
+  h5 {
+    font-family: $font-airbnb-bold;
+    color: $white;
+    text-decoration: underline solid $vertclair;
+    text-underline-position: under;
+    margin-bottom: 50px;
+  }
+  p {
+    color: $white;
+    font-size: 20px;
+    margin-right: 33px;
+  }
+  p.contact-text {
+    font-family: $font-airbnb-light;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 80px;
+  }
+
+  li {
+    color: $white;
+    a {
+      color: $white;
+    }
+  }
+  .about-list {
+    margin-left: 30px;
+  }
 }

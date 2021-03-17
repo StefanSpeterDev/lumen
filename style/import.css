@@ -40,12 +40,59 @@
   src: local("Airbnb Cereal App Black"), url("../font/AirbnbCerealBlack.woff") format("woff");
 }
 
-html, body {
+html,
+body {
   font-family: "Airbnb Cereal App Book";
   margin: 0;
   padding: 0;
   overflow: auto;
   overflow-x: hidden;
+}
+
+span.bold {
+  font-family: "Airbnb Cereal App Bold";
+}
+
+footer {
+  background-color: #272727;
+}
+
+footer h5 {
+  font-family: "Airbnb Cereal App Bold";
+  color: white;
+  -webkit-text-decoration: underline solid #55D97C;
+          text-decoration: underline solid #55D97C;
+  text-underline-position: under;
+  margin-bottom: 50px;
+}
+
+footer p {
+  color: white;
+  font-size: 20px;
+  margin-right: 33px;
+}
+
+footer p.contact-text {
+  font-family: "Airbnb Cereal App Light";
+  font-size: 17px;
+  text-align: left;
+  margin-left: 80px;
+}
+
+footer li {
+  color: white;
+}
+
+footer li a {
+  color: white;
+}
+
+footer .about-list {
+  margin-left: 30px;
+}
+
+body.homepage {
+  overflow-y: hidden;
 }
 
 body.homepage div.wrapper-header {
@@ -95,7 +142,7 @@ body.homepage div.wrapper-header .wrapper-texte p {
 
 body.homepage div.wrapper-header .wrapper-texte a {
   width: 255px;
-  background: #3B413D;
+  background: #3b413d;
   color: white;
   text-transform: uppercase;
   border-radius: 25px;
@@ -140,9 +187,9 @@ body.homepage div.wrapper-nouveaute .introduction {
 }
 
 body.homepage div.wrapper-nouveaute .introduction hr {
-  color: #55D97C;
-  border-color: #55D97C;
-  background-color: #55D97C;
+  color: #55d97c;
+  border-color: #55d97c;
+  background-color: #55d97c;
   height: 12px;
   width: 363px;
   margin-left: 0;
@@ -154,12 +201,126 @@ body.homepage div.wrapper-nouveaute .introduction h3 {
   font-family: "Airbnb Cereal App Bold";
 }
 
+body.homepage div.wrapper-nouveaute .container {
+  margin-top: 140px;
+}
+
+body.homepage div.wrapper-nouveaute h2 {
+  font-family: "Airbnb Cereal App Bold";
+  font-size: 32px;
+  border-bottom: 5px solid #55d97c;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+body.homepage div.wrapper-nouveaute p.price {
+  margin-top: 22px;
+  margin-bottom: 46px;
+}
+
 body.homepage div.wrapper-nouveaute a {
-  background-color: #3B413D;
+  background-color: #3b413d;
   border-radius: 25px;
   color: white;
   text-transform: uppercase;
   width: 331px;
+  font-size: 28px;
+}
+
+body.homepage div.wrapper-nouveaute .green-bean {
+  background-image: url(../image/left-bean.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: relative;
+  height: 600px;
+}
+
+body.homepage div.wrapper-nouveaute .green-bean #first-solar {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+body.homepage div.wrapper-nouveaute .green-bean #second-solar {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+body.homepage .btn-catalogue a {
+  width: 504px;
+  background-color: #3b413d;
+  border-radius: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: "Airbnb Cereal App Bold";
+  margin-top: 108px;
+  margin-bottom: 209px;
+}
+
+body.homepage .newsletter-wrapper {
+  height: 490px;
+  background-color: #55D97C;
+  position: relative;
+}
+
+body.homepage .newsletter-wrapper .wrapper-h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 54px;
+}
+
+body.homepage .newsletter-wrapper .wrapper-h3 h3 {
+  font-family: "Airbnb Cereal App Bold";
+  width: 542px;
+  color: white;
+}
+
+body.homepage .newsletter-wrapper .flex-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 105px;
+}
+
+body.homepage .newsletter-wrapper .flex-form input {
+  width: 688px;
+}
+
+body.homepage .newsletter-wrapper .flex-form button {
+  background-color: #3b413d;
+  border-radius: 25px;
+  color: white;
+  text-transform: uppercase;
+  width: 254px;
+  margin-left: 49px;
+}
+
+body.homepage .newsletter-wrapper img#team-left {
+  position: absolute;
+  top: -75px;
+  left: -330px;
+}
+
+body.homepage .newsletter-wrapper img#team-right {
+  position: absolute;
+  top: -74px;
+  right: -230px;
 }
 
 nav.navbar {

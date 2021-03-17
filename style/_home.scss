@@ -1,4 +1,5 @@
 body.homepage {
+  overflow-y: hidden;
   div.wrapper-header {
     background-image: url(../image/header-trace-vert.png);
     background-position: center center;
@@ -48,35 +49,112 @@ body.homepage {
   }
   // Nouveauté
   div.wrapper-nouveaute {
-      margin-top: 200px;
-      .introduction {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          flex-direction: row;
-          hr {
-              color:#55D97C;
-              border-color:#55D97C;
-              background-color:#55D97C;
-              height: 12px;
-              width: 363px;
-              margin-left: 0;
-              margin-right: 23px;
-          }
-          h3 {
-              font-size: 40px;
-              font-family: $font-airbnb-bold;
-          }
+    margin-top: 200px;
+    .introduction {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      hr {
+        color: #55d97c;
+        border-color: #55d97c;
+        background-color: #55d97c;
+        height: 12px;
+        width: 363px;
+        margin-left: 0;
+        margin-right: 23px;
       }
-      h2 {
-
+      h3 {
+        font-size: 40px;
+        font-family: $font-airbnb-bold;
       }
-      p {
-
+    }
+    .container {
+      margin-top: 140px;
+    }
+    h2 {
+      font-family: $font-airbnb-bold;
+      font-size: 32px;
+      border-bottom: 5px solid #55d97c;
+      text-transform: uppercase;
+      margin-bottom: 64px;
+    }
+    p.price {
+      margin-top: 22px;
+      margin-bottom: 46px;
+    }
+    a {
+      @include btn-grey;
+      width: 331px;
+      font-size: 28px;
+    }
+    .green-bean {
+      background-image: url(../image/left-bean.png);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      position: relative;
+      height: 600px;
+      #first-solar {
+        position: absolute;
+        top: 30px;
+        left: 50px;
       }
-      a {
-          @include btn-grey;
-          width: 331px;
+      #second-solar {
+        position: absolute;
+        top: 0;
+        right: 50px;
       }
+    }
+  }
+  .btn-catalogue {
+    a {
+      width: 504px;
+      @include btn-grey;
+      font-size: 28px;
+      font-family: $font-airbnb-bold;
+      margin-top: 108px;
+      margin-bottom: 209px;
+    }
+  }
+  .newsletter-wrapper {
+    height: 490px;
+    background-color: $vertclair;
+    position: relative;
+    .wrapper-h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 54px;
+      h3 {
+        font-family: $font-airbnb-bold;
+        width: 542px;
+        color: $white;
+      }
+    }
+    .flex-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 105px;
+      input {
+        width: 688px;
+      }
+      button {
+        @include btn-grey;
+        width: 254px;
+        margin-left: 49px;
+      }
+    }
+    img#team-left {
+      position: absolute;
+      top:-75px;
+      left: -330px
+    }
+    img#team-right {
+      position: absolute;
+      top:-74px;
+      right: -230px;
+    }
   }
 }
