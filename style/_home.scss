@@ -116,45 +116,5 @@ body.homepage {
       margin-bottom: 209px;
     }
   }
-  .newsletter-wrapper {
-    height: 490px;
-    background-color: $vertclair;
-    position: relative;
-    .wrapper-h3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding-top: 54px;
-      h3 {
-        font-family: $font-airbnb-bold;
-        width: 542px;
-        color: $white;
-      }
-    }
-    .flex-form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 105px;
-      input {
-        width: 688px;
-      }
-      button {
-        @include btn-grey;
-        width: 254px;
-        margin-left: 49px;
-      }
-    }
-    img#team-left {
-      position: absolute;
-      top:-75px;
-      left: -330px
-    }
-    img#team-right {
-      position: absolute;
-      top:-74px;
-      right: -230px;
-    }
-  }
+  
 }
