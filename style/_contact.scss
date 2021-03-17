@@ -1,0 +1,73 @@
+body.contact {
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 96px;
+    margin-bottom: 141px;
+    .left-part {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 471px;
+        height: 347px;
+      }
+      h2 {
+        width: 538px;
+        font-size: 53px;
+        @include underline;
+        font-family: $font-airbnb-bold;
+        margin-top: 91px;
+        margin-bottom: 75px;
+      }
+      p {
+        width: 517px;
+        font-size: 20px;
+        font-family: $font-airbnb-light;
+      }
+    }
+    .right-part {
+      width: 50%;
+      h1 {
+        font-size: 53px;
+        font-family: $font-airbnb-bold;
+        @include underline;
+        margin-bottom: 22px;
+      }
+      .form-row {
+        margin-bottom: 46px;
+      }
+      label {
+        margin-bottom: 22px;
+        font-family: $font-airbnb-bold;
+        font-size: 20px;
+      }
+      input {
+        border-radius: 25px;
+        border-color: $vertclair;
+        width: 441px;
+        &::placeholder {
+            font-size: 20px;
+            font-family: $font-airbnb-light;
+            padding: 11px 115px 11px 16px;
+        }
+      }
+      textarea {
+        border-radius: 25px;
+        border-color: $vertclair;
+        height: 162px;
+        &::placeholder {
+            font-size: 20px;
+            font-family: $font-airbnb-light;
+            padding: 11px 115px 11px 16px;
+        }
+      }
+      button {
+        @include btn-grey;
+        padding: 10px 76px;
+        font-size: 22px;
+        font-family: $font-airbnb-bold;
+        color: $white
+      }
+    }
+  }
+}

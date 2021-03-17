@@ -654,4 +654,140 @@ body.catalogue .wrapper-catalogue .wrapper-filtres .wrapper-pager button {
   font-size: 20px;
   font-family: "Airbnb Cereal App Medium";
 }
+
+body.contact .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 96px;
+  margin-bottom: 141px;
+}
+
+body.contact .contact-wrapper .left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body.contact .contact-wrapper .left-part img {
+  width: 471px;
+  height: 347px;
+}
+
+body.contact .contact-wrapper .left-part h2 {
+  width: 538px;
+  font-size: 53px;
+  -webkit-text-decoration: underline solid #55D97C;
+          text-decoration: underline solid #55D97C;
+  text-underline-position: under;
+  font-family: "Airbnb Cereal App Bold";
+  margin-top: 91px;
+  margin-bottom: 75px;
+}
+
+body.contact .contact-wrapper .left-part p {
+  width: 517px;
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+}
+
+body.contact .contact-wrapper .right-part {
+  width: 50%;
+}
+
+body.contact .contact-wrapper .right-part h1 {
+  font-size: 53px;
+  font-family: "Airbnb Cereal App Bold";
+  -webkit-text-decoration: underline solid #55D97C;
+          text-decoration: underline solid #55D97C;
+  text-underline-position: under;
+  margin-bottom: 22px;
+}
+
+body.contact .contact-wrapper .right-part .form-row {
+  margin-bottom: 46px;
+}
+
+body.contact .contact-wrapper .right-part label {
+  margin-bottom: 22px;
+  font-family: "Airbnb Cereal App Bold";
+  font-size: 20px;
+}
+
+body.contact .contact-wrapper .right-part input {
+  border-radius: 25px;
+  border-color: #55D97C;
+  width: 441px;
+}
+
+body.contact .contact-wrapper .right-part input::-webkit-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part input:-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part input::-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part input::placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part textarea {
+  border-radius: 25px;
+  border-color: #55D97C;
+  height: 162px;
+}
+
+body.contact .contact-wrapper .right-part textarea::-webkit-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part textarea:-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part textarea::-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part textarea::placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 11px 115px 11px 16px;
+}
+
+body.contact .contact-wrapper .right-part button {
+  background-color: #3b413d;
+  border-radius: 25px;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 76px;
+  font-size: 22px;
+  font-family: "Airbnb Cereal App Bold";
+  color: white;
+}
 /*# sourceMappingURL=import.css.map */
