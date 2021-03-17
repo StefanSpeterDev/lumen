@@ -58,16 +58,26 @@ footer {
   height: 490px;
   background-color: $vertclair;
   position: relative;
+  @media screen and (max-width: 600px) {
+    min-height: 154px;
+    height: auto;
+  }
   .wrapper-h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 54px;
+    @media screen and (max-width: 600px) {
+      padding-top: 11px;
+    }
     h3 {
       font-family: $font-airbnb-bold;
       width: 542px;
       color: $white;
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
   .flex-form {
@@ -75,24 +85,41 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 105px;
+    @media screen and (max-width: 600px) {
+      margin-top: 11px;
+    }
     input {
       width: 688px;
+      @media screen and (max-width: 600px) {
+        width: 300px;
+        margin-bottom: 18px;
+        margin-left: 30px;
+      }
     }
     button {
       @include btn-grey;
       width: 254px;
       margin-left: 49px;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 18px !important;
+      }
     }
   }
   img#team-left {
     position: absolute;
     top: -75px;
     left: -330px;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
   img#team-right {
     position: absolute;
     top: -74px;
     right: -230px;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 }
 .hr-vert {
@@ -103,4 +130,7 @@ footer {
   width: 363px;
   margin-left: 0;
   margin-right: 23px;
+  @media screen and (max-width: 600px) {
+    width: 115px !important;
+  }
 }

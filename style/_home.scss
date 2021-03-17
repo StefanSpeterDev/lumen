@@ -15,12 +15,19 @@ body.homepage {
       align-items: flex-start;
       flex-direction: column;
       margin-top: 268px;
+      @media screen and (max-width: 600px) {
+        margin-top: 39px;
+      }
       h2 {
         width: 400px;
         font-weight: bold;
         font-size: 53px;
         color: $white;
         text-transform: uppercase;
+        @media screen and (max-width: 600px) {
+          font-size: 33px;
+          width: 228px;
+        }
       }
       p {
         width: 422px;
@@ -29,7 +36,11 @@ body.homepage {
         font-family: $font-airbnb-light;
         margin-top: 26px;
         margin-bottom: 26px;
+        @media screen and (max-width: 600px) {
+          margin-top: 8px;
+        }
       }
+
       a {
         width: 255px;
         background: $grey;
@@ -37,6 +48,9 @@ body.homepage {
         text-transform: uppercase;
         border-radius: 25px;
         font-family: $font-airbnb-bold;
+        @media screen and (max-width: 600px) {
+          align-self: center;
+        }
       }
     }
     .wrapper-image {
@@ -45,6 +59,9 @@ body.homepage {
       align-items: center;
       flex-direction: column;
       margin-top: 190px;
+      @media screen and (max-width: 600px) {
+        margin-top: 130px;
+      }
     }
   }
   // Nouveauté
@@ -87,6 +104,22 @@ body.homepage {
       @include btn-grey;
       width: 331px;
       font-size: 28px;
+      font-family: $font-airbnb-bold;
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+    }
+    .homepart {
+      p {
+        width: 420px;
+        margin-top: 46px;
+        margin-bottom: 64px;
+      }
+      @media screen and (max-width: 600px) {
+        a {
+          margin-bottom: 46px;
+        }
+      }
     }
     .green-bean {
       background-image: url(../image/left-bean.png);
@@ -94,15 +127,26 @@ body.homepage {
       background-position: bottom right;
       position: relative;
       height: 600px;
+      @media screen and (max-width: 600px) {
+        background-size: 300px 300px;
+      }
       #first-solar {
         position: absolute;
         top: 30px;
         left: 50px;
+        @media screen and (max-width: 600px) {
+          height: 300px;
+          top: 250px;
+        }
       }
       #second-solar {
         position: absolute;
         top: 0;
         right: 50px;
+        @media screen and (max-width: 600px) {
+          height: 300px;
+          top: 130px;
+        }
       }
     }
   }
@@ -114,7 +158,11 @@ body.homepage {
       font-family: $font-airbnb-bold;
       margin-top: 108px;
       margin-bottom: 209px;
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+        width: 249px;
+        margin-bottom: 79px;
+      }
     }
   }
-  
 }
