@@ -137,3 +137,21 @@ footer {
     width: 115px !important;
   }
 }
+
+.wrapper-retour {
+  margin-top: 43px;
+  a {
+    @include underline;
+    font-family: $font-airbnb-bold;
+    font-size: 20px;
+    color: $black;
+  }
+
+  .green {
+    color: $vertclair;
+    margin-right: 17px;
+    margin-left: 45px;
+  }
+}
+
+
