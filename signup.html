@@ -14,7 +14,7 @@
     <title>Lumen</title>
 </head>
 
-<body class="login">
+<body class="signup">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="d-flex flex-grow-1">
             <a class="navbar-brand" href="#">
@@ -54,30 +54,52 @@
             < </span> <a href="./catalogue.html">Retour au site</a>
     </div>
 
-    <div class="wrapper-login shadow">
-        <h1>Connectez vous !</h1>
+    <div class="wrapper-signup shadow">
+        <h1>Inscription</h1>
         <form>
-            <div class="form-group">
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Duhamel">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" placeholder="Théophane">
+                </div>
             </div>
-            <div class="form-group">
-                <input type="password" class="form-control" id="mdp" placeholder="Mot de passe">
-                <small id="mdpHelp" class="form-text text-muted">Mot de passe oublié ?</small>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="confirmMail">Répéter l'e-mail</label>
+                    <input type="email" class="form-control" id="confirmMail" placeholder="E-mail">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="pwd">Mot de passe</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Mot de passe">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pwdConfirm">Répéter le mot de passe</label>
+                    <input type="password" class="form-control" id="pwdConfirm" placeholder="Mot de passe">
+                </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn">Connexion</button>
+                <button type="submit" class="btn">S'inscrire</button>
                 <div class="other-connexion">
-                    Ou connectez vous avec
+                    Ou inscrivez-vous avec
                     <div class="logo">
                         <img src="./image/google.png" alt="">
                         <img src="./image/fb.png" id="fb">
                     </div>
                 </div>
                 <div class="no-compte">
-                    Pas de compte ? <a href="./signup.html">Inscrivez vous</a>
+                    Vous avez déjà un compte ? <a href="./signup.html">Connectez-vous</a>
                 </div>
             </div>
-
         </form>
     </div>
 
@@ -163,6 +185,9 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

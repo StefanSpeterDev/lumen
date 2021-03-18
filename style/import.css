@@ -1309,4 +1309,128 @@ body.login form .no-compte a {
   text-underline-position: under;
   color: black;
 }
+
+body.signup .wrapper-signup {
+  margin-top: 117px;
+  margin-bottom: 108px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  body.signup .wrapper-signup {
+    width: 346px;
+  }
+}
+
+body.signup .wrapper-signup h1 {
+  -webkit-text-decoration: underline solid #55D97C;
+          text-decoration: underline solid #55D97C;
+  text-underline-position: under;
+  font-size: 40px;
+  font-family: "Airbnb Cereal App Bold";
+  margin-top: 28px;
+  margin-bottom: 54px;
+}
+
+body.signup .wrapper-signup form {
+  margin-left: 76px;
+  margin-right: 76px;
+}
+
+body.signup .wrapper-signup form label {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Bold";
+  margin-left: 15px;
+}
+
+body.signup .wrapper-signup form input {
+  border-radius: 25px;
+  border-color: #55D97C;
+  width: 441px;
+}
+
+body.signup .wrapper-signup form input#nom, body.signup .wrapper-signup form input#prenom, body.signup .wrapper-signup form input#email, body.signup .wrapper-signup form input#pwd {
+  margin-right: 77px;
+}
+
+body.signup .wrapper-signup form input::-webkit-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 14px 115px 14px 22px;
+}
+
+body.signup .wrapper-signup form input:-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 14px 115px 14px 22px;
+}
+
+body.signup .wrapper-signup form input::-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 14px 115px 14px 22px;
+}
+
+body.signup .wrapper-signup form input::placeholder {
+  font-size: 20px;
+  font-family: "Airbnb Cereal App Light";
+  padding: 14px 115px 14px 22px;
+}
+
+body.signup .wrapper-signup form .other-connexion {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-size: 17px;
+  font-family: "Airbnb Cereal App Light";
+}
+
+body.signup .wrapper-signup form .other-connexion .logo {
+  margin-top: 18px;
+  margin-bottom: 43px;
+}
+
+body.signup .wrapper-signup form .other-connexion .logo #fb {
+  margin-left: 35px;
+}
+
+body.signup .wrapper-signup form .no-compte {
+  margin-bottom: 40px;
+  font-family: "Airbnb Cereal App Light";
+  font-size: 20px;
+}
+
+body.signup .wrapper-signup form .no-compte a {
+  -webkit-text-decoration: underline solid #55D97C;
+          text-decoration: underline solid #55D97C;
+  text-underline-position: under;
+  color: black;
+}
+
+body.signup .wrapper-signup form button {
+  background-color: #3b413d;
+  border-radius: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Airbnb Cereal App Bold";
+  width: 254px;
+  font-size: 22px;
+  margin-top: 45px;
+  margin-bottom: 37px;
+}
 /*# sourceMappingURL=import.css.map */

@@ -1,0 +1,80 @@
+body.signup {
+  .wrapper-signup {
+    margin-top: 117px;
+    margin-bottom: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1103px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    @media screen and (max-width: 600px) {
+      width: 346px;
+    }
+    h1 {
+      @include underline;
+      font-size: 40px;
+      font-family: $font-airbnb-bold;
+      margin-top: 28px;
+      margin-bottom: 54px;
+    }
+    form {
+      margin-left: 76px;
+      margin-right: 76px;
+      label {
+        font-size: 20px;
+        font-family: $font-airbnb-bold;
+        margin-left: 15px;
+      }
+      input {
+        border-radius: 25px;
+        border-color: $vertclair;
+        width: 441px;
+        &#nom,
+        &#prenom,
+        &#email,
+        &#pwd {
+          margin-right: 77px;
+        }
+        &::placeholder {
+          font-size: 20px;
+          font-family: $font-airbnb-light;
+          padding: 14px 115px 14px 22px;
+        }
+        
+      }
+      .other-connexion {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-size: 17px;
+        font-family: $font-airbnb-light;
+        .logo {
+          margin-top: 18px;
+          margin-bottom: 43px;
+          #fb {
+            margin-left: 35px;
+          }
+        }
+      }
+      .no-compte {
+        margin-bottom: 40px;
+        font-family: $font-airbnb-light;
+        font-size: 20px;
+        a {
+          @include underline;
+          color: black;
+        }
+      }
+      button {
+        @include btn-grey;
+        font-family: $font-airbnb-bold;
+        width: 254px;
+        font-size: 22px;
+        margin-top: 45px;
+        margin-bottom: 37px;
+      }
+    }
+  }
+}
