@@ -163,6 +163,12 @@ footer .about-list {
   width: 688px;
 }
 
+@media screen and (max-width: 1600px) {
+  .newsletter-wrapper .flex-form input {
+    width: 500px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .newsletter-wrapper .flex-form input {
     width: 300px;
@@ -183,6 +189,12 @@ footer .about-list {
 @media screen and (max-width: 600px) {
   .newsletter-wrapper .flex-form button {
     margin-bottom: 18px !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .newsletter-wrapper .flex-form button {
+    width: 200px;
   }
 }
 
@@ -913,6 +925,12 @@ body.contact .contact-wrapper .right-part input {
   width: 441px;
 }
 
+@media screen and (max-width: 1600px) {
+  body.contact .contact-wrapper .right-part input#nom, body.contact .contact-wrapper .right-part input#prenom {
+    width: 220px;
+  }
+}
+
 body.contact .contact-wrapper .right-part input::-webkit-input-placeholder {
   font-size: 20px;
   font-family: "Airbnb Cereal App Light";
@@ -1043,6 +1061,9 @@ body.product .wrapper-product .right-part .title-prix {
 
 body.product .wrapper-product .right-part .title-prix h1 {
   font-size: 43px;
+  -webkit-text-decoration: underline solid #55D97C;
+          text-decoration: underline solid #55D97C;
+  text-underline-position: under;
   font-family: "Airbnb Cereal App Bold";
 }
 
@@ -1420,6 +1441,12 @@ body.cart .wrapper-etapes {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1600px) {
+  body.cart .wrapper-etapes {
+    width: 80%;
+  }
+}
+
 body.cart .wrapper-etapes .firstStep {
   font-family: "Airbnb Cereal App Bold";
   font-size: 20px;
@@ -1669,6 +1696,14 @@ body.cart .wrapper-livraison .container-livraison {
   width: 1320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+body.cart .wrapper-livraison .container-livraison .first-part {
+  width: 60%;
+}
+
+body.cart .wrapper-livraison .container-livraison .second-part {
+  width: 40%;
 }
 
 body.cart .wrapper-livraison .container-livraison .securite {

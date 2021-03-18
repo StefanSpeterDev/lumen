@@ -4,6 +4,9 @@ body.cart {
     justify-content: space-around;
     align-items: center;
     width: 60%;
+    @media screen and (max-width: 1600px) {
+        width:  80%;
+      }
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
@@ -178,6 +181,12 @@ body.cart {
       width: 1320px;
       margin-left: auto;
       margin-right: auto;
+      .first-part {
+          width: 60%;
+      }
+      .second-part {
+          width: 40%;
+      }
       .securite {
         display: flex;
         justify-content: space-around;

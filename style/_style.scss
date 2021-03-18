@@ -88,11 +88,15 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 105px;
+
     @media screen and (max-width: 600px) {
       margin-top: 11px;
     }
     input {
       width: 688px;
+      @media screen and (max-width: 1600px) {
+        width: 500px;
+      }
       @media screen and (max-width: 600px) {
         width: 300px;
         margin-bottom: 18px;
@@ -105,6 +109,9 @@ footer {
       margin-left: 49px;
       @media screen and (max-width: 600px) {
         margin-bottom: 18px !important;
+      }
+      @media screen and (max-width: 1600px) {
+        width: 200px;
       }
     }
   }
@@ -153,5 +160,3 @@ footer {
     margin-left: 45px;
   }
 }
-
-

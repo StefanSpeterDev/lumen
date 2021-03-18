@@ -1,5 +1,4 @@
 body.product {
-  
   .wrapper-product {
     margin-top: 140px;
     margin-bottom: 140px;
@@ -48,6 +47,8 @@ body.product {
         align-items: center;
         h1 {
           font-size: 43px;
+
+          @include underline;
           font-family: $font-airbnb-bold;
         }
         p {
