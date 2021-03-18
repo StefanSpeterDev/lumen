@@ -11,14 +11,14 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="./style/slick.css"/>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/import.css">
 
     <title>Lumen</title>
 </head>
 
 <body class="homepage">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" class="navbar navbar-expand-lg navbar-dark">
         <div class="d-flex flex-grow-1">
             <a class="navbar-brand" href="#">
                 <img src="./image/logo-blanc.png">
@@ -56,7 +56,7 @@
     <div class="wrapper-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 wrapper-texte">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" class="col-md-6 wrapper-texte">
                     <h2>Lumen charger</h2>
                     <p> Et si votre reflet vous permettait d'économiser de l'énergie ?
                         Le panneau solaire charge tous les appareils :
@@ -68,8 +68,8 @@
                     <a class="btn" href="./about.html">Je le veux !</a>
                 </div>
                 <div class="col-md-6 green-bean">
-                    <img class="img-fluid" id="first-solar" src="./image/left-item.png">
-                    <img class="img-fluid" id="second-solar" src="./image/right-item.png">
+                    <img data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" class="img-fluid" id="first-solar" src="./image/left-item.png">
+                    <img data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" class="img-fluid" id="second-solar" src="./image/right-item.png">
                 </div>
             </div>
         </div>
@@ -78,11 +78,11 @@
     <div class="wrapper-nouveaute">
         <div class="introduction">
             <hr class="hr-vert">
-            <h3>Découvrez-le</h3>
+            <h3 data-aos="fade-up">Découvrez-le</h3>
         </div>
         <div class="container homepart">
             <div class="row justify-content-between">
-                <div class="col-md-5 col-md-pull-5">
+                <div data-aos="flip-right" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" class="col-md-5 col-md-pull-5">
                     <h2>Lumen charger</h2>
                     <p>Doté de la technologie solaire, le <span class="bold">window solar charger</span> permet non
                         seulement de récolter
@@ -97,7 +97,7 @@
                     <a href="" class="btn">EN SAVOIR PLUS ></a>
                 </div>
                 <div class="col-md-6 col-md-push-6">
-                    <img class="img-fluid" src="./image/home.png" alt="">
+                    <img data-aos="flip-up" data-aos-anchor-placement="center-bottom" class="img-fluid" src="./image/home.png" alt="">
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
     <div class="wrapper-carousel">
         <img src="./image/slide1.png">
         <img src="./image/slide2.png">
-        <img src="./image/slide3.png">
+        <img src="./image/Slide3.png">
         <img src="./image/slide4.png">
         <img src="./image/slide5.png">
         <img src="./image/slide6.png">
@@ -208,6 +208,10 @@
         crossorigin="anonymous"></script>
     <script src="./js/slide.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+
+
 
 </body>
 

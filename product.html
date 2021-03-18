@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/import.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <title>Lumen</title>
 </head>
 
 <body class="product">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav data-aos="fade-up" data-aos-duration="800" class="navbar navbar-expand-lg navbar-dark">
         <div class="d-flex flex-grow-1">
             <a class="navbar-brand" href="#">
                 <img src="./image/logo-blanc.png">
@@ -57,7 +59,7 @@
         <img src="./image/carousel3.png" class="bean">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="800">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -85,12 +87,12 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-7 right-part">
-                    <div class="title-prix">
+                    <div class="title-prix" data-aos="fade-left" data-aos-duration="800">
                         <h1>Window Solar Charger</h1>
                         <p>119€</p>
                     </div>
 
-                    <div class="description shadow">
+                    <div class="description shadow" data-aos="fade-left" data-aos-duration="800">
                         <span class="bold-medium">Ce panneau solaire charge tous les appareils, iPhones, Androids,
                             montres intelligentes, AirPods…</span><br />
                         - Batterie rechargeable de 10 000mAh <br />
@@ -256,6 +258,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
 </body>
 
 </html>

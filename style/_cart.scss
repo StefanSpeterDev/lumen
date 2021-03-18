@@ -1,0 +1,152 @@
+body.cart {
+  .wrapper-etapes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    .firstStep {
+      font-family: $font-airbnb-bold;
+      font-size: 20px;
+    }
+    img {
+      margin-right: 10px;
+    }
+    .arrow-right {
+      color: $vertclair;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  }
+  .wrapper-details {
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .wrapper-h1 {
+      display: flex;
+      margin-top: 66px;
+      h1 {
+        font-size: 53px;
+        font-family: $font-airbnb-bold;
+        @include underline;
+        margin-bottom: 170px;
+      }
+    }
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 50px;
+      margin-bottom: 170px;
+      .inner-details {
+        width: 587px;
+        height: 270px;
+        padding: 50px;
+        border-radius: 25px;
+        margin-top: 60px;
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          img#solar {
+            height: 200px;
+            width: 130px;
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 200px;
+            p {
+              margin: 0;
+            }
+            p.name {
+              margin-bottom: 38px;
+              font-family: $font-airbnb-bold;
+              font-size:20px;
+            }
+            .inner-content {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              width: 250px;
+              p.price {
+                  font-size: 24px;
+                  font-family: $font-airbnb-bold;
+              }
+              p.quantite {
+                  font-family: $font-airbnb-bold;
+                  span.number {
+                    background-color: $vertclair;
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    text-align: center;
+                    margin-left: 11px;
+                    margin-right: 11px;
+                  }
+              }
+            }
+          }
+        }
+      }
+      .sous-total {
+        width: 500px;
+        height: auto;
+        border-radius: 25px;
+        h3 {
+            text-transform: uppercase;
+            font-family: $font-airbnb-bold;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 53px;
+            @include underline;
+        }
+        .item-bought {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 48px;
+            margin-right: 22px;
+            p {
+                font-family: $font-airbnb-light;
+                font-size: 24px;
+            }
+            p.price {
+                font-size: 24px;
+                font-family: $font-airbnb-bold;
+            }
+        }
+        .total {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 53px;
+            margin-bottom: 42px;
+            p.price-total {
+                font-size:30px;
+                font-family: $font-airbnb-light;
+                margin:0px;
+            }
+            p.note {
+                font-size: 24px;
+                font-family: $font-airbnb-light;
+                margin-bottom: 37px;
+            }
+            a {
+                @include btn-grey;
+                width: 179px;
+                font-family: $font-airbnb-bold;
+                font-size: 22px;
+            }
+        }
+    }
+    }
+  }
+}

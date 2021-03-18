@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/import.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <title>Lumen</title>
 </head>
 
 <body class="contact">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="center-bottom" class="navbar navbar-expand-lg navbar-dark">
         <div class="d-flex flex-grow-1">
             <a class="navbar-brand" href="#">
                 <img src="./image/logo-blanc.png">
@@ -51,12 +53,12 @@
     </nav>
     <div class="contact-wrapper">
         <div class="left-part">
-            <img src="./image/team-contact.png">
-            <h2>Ensemble, <br>changeons le monde.</h2>
-            <p>Vous avez des questions ? Vous avez besoin de notre aide pour choisir votre mobilier de demain ? Nos
+            <img data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="center-bottom" src="./image/team-contact.png">
+            <h2 data-aos="fade-down" data-aos-duration="800" data-aos-anchor-placement="center-bottom">Ensemble, <br>changeons le monde.</h2>
+            <p data-aos="fade-down" data-aos-duration="800" data-aos-anchor-placement="center-bottom">Vous avez des questions ? Vous avez besoin de notre aide pour choisir votre mobilier de demain ? Nos
                 produits intéressent votre entreprise ?</p>
         </div>
-        <div class="right-part">
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-anchor-placement="center-bottom" class="right-part">
             <h1>Contactez-nous !</h1>
             <form>
                 <div class="form-row">
@@ -84,7 +86,8 @@
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="message">Votre message</label>
-                        <textarea class="form-control" id="message" placeholder="Écrivez votre message ici..."></textarea>
+                        <textarea class="form-control" id="message"
+                            placeholder="Écrivez votre message ici..."></textarea>
                     </div>
                 </div>
                 <div class="text-center">
@@ -186,6 +189,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
 </body>
 
 </html>

@@ -4,12 +4,11 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    centerPadding: '60px',
-
+    centerPadding: "60px",
     arrows: false,
     focusOnSelect: true,
     cssEase: "linear",
-   // autoplay: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,
