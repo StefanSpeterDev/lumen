@@ -66,7 +66,7 @@ body.cart {
             p.name {
               margin-bottom: 38px;
               font-family: $font-airbnb-bold;
-              font-size:20px;
+              font-size: 20px;
             }
             .inner-content {
               display: flex;
@@ -75,78 +75,170 @@ body.cart {
               justify-content: space-between;
               width: 250px;
               p.price {
-                  font-size: 24px;
-                  font-family: $font-airbnb-bold;
+                font-size: 24px;
+                font-family: $font-airbnb-bold;
               }
               p.quantite {
-                  font-family: $font-airbnb-bold;
-                  span.number {
-                    background-color: $vertclair;
-                    display: inline-block;
-                    border-radius: 50%;
-                    width: 25px;
-                    height: 25px;
-                    text-align: center;
-                    margin-left: 11px;
-                    margin-right: 11px;
-                  }
+                font-family: $font-airbnb-bold;
+                span.number {
+                  background-color: $vertclair;
+                  display: inline-block;
+                  border-radius: 50%;
+                  width: 25px;
+                  height: 25px;
+                  text-align: center;
+                  margin-left: 11px;
+                  margin-right: 11px;
+                }
               }
             }
           }
         }
       }
-      .sous-total {
-        width: 500px;
+    }
+  }
+  .second-part{
+      .wrapper-h3 {
+          padding-top: 15px;
+      }
+      a {
+          margin-bottom: 30px;
+      }
+  }
+  .sous-total {
+    width: 500px;
+    height: auto;
+    border-radius: 25px;
+    h3 {
+      text-transform: uppercase;
+      font-family: $font-airbnb-bold;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 24px;
+      margin-bottom: 53px;
+      @include underline;
+    }
+    .item-bought {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 48px;
+      margin-right: 22px;
+      p {
+        font-family: $font-airbnb-light;
+        font-size: 24px;
+      }
+      p.price {
+        font-size: 24px;
+        font-family: $font-airbnb-bold;
+      }
+    }
+    .total {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 53px;
+      margin-bottom: 42px;
+      p.price-total {
+        font-size: 30px;
+        font-family: $font-airbnb-light;
+        margin: 0px;
+      }
+      p.note {
+        font-size: 24px;
+        font-family: $font-airbnb-light;
+        margin-bottom: 37px;
+      }
+      a {
+        @include btn-grey;
+        width: 179px;
+        font-family: $font-airbnb-bold;
+        font-size: 22px;
+      }
+    }
+  }
+  // Paiement
+  .wrapper-livraison {
+    .wrapper-h1 {
+      display: flex;
+      margin-top: 66px;
+      width: 1320px;
+      justify-content: flex-start;
+      margin-right: auto;
+      margin-left: auto;
+      h1 {
+        font-size: 53px;
+        font-family: $font-airbnb-bold;
+        @include underline;
+        margin-bottom: 170px;
+      }
+    }
+    .container-livraison {
+      display: flex;
+      width: 1320px;
+      margin-left: auto;
+      margin-right: auto;
+      .securite {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .paiement,
+        .retour {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          div {
+            width: 70%;
+            text-align: center;
+          }
+        }
+      }
+      .livraison,
+      .coordonnes,
+      .securite {
+        margin-right: 400px;
+        width: 600px;
         height: auto;
         border-radius: 25px;
-        h3 {
-            text-transform: uppercase;
-            font-family: $font-airbnb-bold;
-            font-size: 30px;
+        padding: 37px 50px 43px 50px;
+        margin-bottom: 75px;
+        .wrapper-h2 {
+          margin-bottom: 39px;
+          h2 {
             text-align: center;
-            margin-top: 24px;
-            margin-bottom: 53px;
-            @include underline;
+            font-size: 27px;
+            font-family: $font-airbnb-bold;
+            text-transform: uppercase;
+          }
         }
-        .item-bought {
-            display: flex;
-            justify-content: space-between;
-            margin-left: 48px;
-            margin-right: 22px;
-            p {
-                font-family: $font-airbnb-light;
-                font-size: 24px;
-            }
-            p.price {
-                font-size: 24px;
-                font-family: $font-airbnb-bold;
-            }
+        .form-check {
+          margin-bottom: 13px;
         }
-        .total {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 53px;
-            margin-bottom: 42px;
-            p.price-total {
-                font-size:30px;
-                font-family: $font-airbnb-light;
-                margin:0px;
-            }
-            p.note {
-                font-size: 24px;
-                font-family: $font-airbnb-light;
-                margin-bottom: 37px;
-            }
-            a {
-                @include btn-grey;
-                width: 179px;
-                font-family: $font-airbnb-bold;
-                font-size: 22px;
-            }
+        .libelle-prix {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 482px;
+          font-family: $font-airbnb-light;
+          font-size: 20px;
         }
-    }
+        form.form-coordonnees {
+          input {
+            border-color: $vertclair;
+            border-radius: 25px;
+            &#phone {
+              width: 50%;
+            }
+          }
+          label {
+            font-family: $font-airbnb-light;
+            font-size: 20px;
+            margin-left: 15px;
+          }
+        }
+      }
     }
   }
 }

@@ -1553,13 +1553,21 @@ body.cart .wrapper-details .wrapper .inner-details .item .content .inner-content
   margin-right: 11px;
 }
 
-body.cart .wrapper-details .wrapper .sous-total {
+body.cart .second-part .wrapper-h3 {
+  padding-top: 15px;
+}
+
+body.cart .second-part a {
+  margin-bottom: 30px;
+}
+
+body.cart .sous-total {
   width: 500px;
   height: auto;
   border-radius: 25px;
 }
 
-body.cart .wrapper-details .wrapper .sous-total h3 {
+body.cart .sous-total h3 {
   text-transform: uppercase;
   font-family: "Airbnb Cereal App Bold";
   font-size: 30px;
@@ -1571,7 +1579,7 @@ body.cart .wrapper-details .wrapper .sous-total h3 {
   text-underline-position: under;
 }
 
-body.cart .wrapper-details .wrapper .sous-total .item-bought {
+body.cart .sous-total .item-bought {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1582,17 +1590,17 @@ body.cart .wrapper-details .wrapper .sous-total .item-bought {
   margin-right: 22px;
 }
 
-body.cart .wrapper-details .wrapper .sous-total .item-bought p {
+body.cart .sous-total .item-bought p {
   font-family: "Airbnb Cereal App Light";
   font-size: 24px;
 }
 
-body.cart .wrapper-details .wrapper .sous-total .item-bought p.price {
+body.cart .sous-total .item-bought p.price {
   font-size: 24px;
   font-family: "Airbnb Cereal App Bold";
 }
 
-body.cart .wrapper-details .wrapper .sous-total .total {
+body.cart .sous-total .total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1610,19 +1618,19 @@ body.cart .wrapper-details .wrapper .sous-total .total {
   margin-bottom: 42px;
 }
 
-body.cart .wrapper-details .wrapper .sous-total .total p.price-total {
+body.cart .sous-total .total p.price-total {
   font-size: 30px;
   font-family: "Airbnb Cereal App Light";
   margin: 0px;
 }
 
-body.cart .wrapper-details .wrapper .sous-total .total p.note {
+body.cart .sous-total .total p.note {
   font-size: 24px;
   font-family: "Airbnb Cereal App Light";
   margin-bottom: 37px;
 }
 
-body.cart .wrapper-details .wrapper .sous-total .total a {
+body.cart .sous-total .total a {
   background-color: #3b413d;
   border-radius: 25px;
   color: white;
@@ -1630,5 +1638,144 @@ body.cart .wrapper-details .wrapper .sous-total .total a {
   width: 179px;
   font-family: "Airbnb Cereal App Bold";
   font-size: 22px;
+}
+
+body.cart .wrapper-livraison .wrapper-h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 66px;
+  width: 1320px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body.cart .wrapper-livraison .wrapper-h1 h1 {
+  font-size: 53px;
+  font-family: "Airbnb Cereal App Bold";
+  -webkit-text-decoration: underline solid #55D97C;
+          text-decoration: underline solid #55D97C;
+  text-underline-position: under;
+  margin-bottom: 170px;
+}
+
+body.cart .wrapper-livraison .container-livraison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.cart .wrapper-livraison .container-livraison .securite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.cart .wrapper-livraison .container-livraison .securite .paiement,
+body.cart .wrapper-livraison .container-livraison .securite .retour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body.cart .wrapper-livraison .container-livraison .securite .paiement div,
+body.cart .wrapper-livraison .container-livraison .securite .retour div {
+  width: 70%;
+  text-align: center;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison,
+body.cart .wrapper-livraison .container-livraison .coordonnes,
+body.cart .wrapper-livraison .container-livraison .securite {
+  margin-right: 400px;
+  width: 600px;
+  height: auto;
+  border-radius: 25px;
+  padding: 37px 50px 43px 50px;
+  margin-bottom: 75px;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison .wrapper-h2,
+body.cart .wrapper-livraison .container-livraison .coordonnes .wrapper-h2,
+body.cart .wrapper-livraison .container-livraison .securite .wrapper-h2 {
+  margin-bottom: 39px;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison .wrapper-h2 h2,
+body.cart .wrapper-livraison .container-livraison .coordonnes .wrapper-h2 h2,
+body.cart .wrapper-livraison .container-livraison .securite .wrapper-h2 h2 {
+  text-align: center;
+  font-size: 27px;
+  font-family: "Airbnb Cereal App Bold";
+  text-transform: uppercase;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison .form-check,
+body.cart .wrapper-livraison .container-livraison .coordonnes .form-check,
+body.cart .wrapper-livraison .container-livraison .securite .form-check {
+  margin-bottom: 13px;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison .libelle-prix,
+body.cart .wrapper-livraison .container-livraison .coordonnes .libelle-prix,
+body.cart .wrapper-livraison .container-livraison .securite .libelle-prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 482px;
+  font-family: "Airbnb Cereal App Light";
+  font-size: 20px;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison form.form-coordonnees input,
+body.cart .wrapper-livraison .container-livraison .coordonnes form.form-coordonnees input,
+body.cart .wrapper-livraison .container-livraison .securite form.form-coordonnees input {
+  border-color: #55D97C;
+  border-radius: 25px;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison form.form-coordonnees input#phone,
+body.cart .wrapper-livraison .container-livraison .coordonnes form.form-coordonnees input#phone,
+body.cart .wrapper-livraison .container-livraison .securite form.form-coordonnees input#phone {
+  width: 50%;
+}
+
+body.cart .wrapper-livraison .container-livraison .livraison form.form-coordonnees label,
+body.cart .wrapper-livraison .container-livraison .coordonnes form.form-coordonnees label,
+body.cart .wrapper-livraison .container-livraison .securite form.form-coordonnees label {
+  font-family: "Airbnb Cereal App Light";
+  font-size: 20px;
+  margin-left: 15px;
 }
 /*# sourceMappingURL=import.css.map */

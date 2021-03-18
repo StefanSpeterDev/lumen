@@ -9,18 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="./style/slick.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
     <link rel="stylesheet" href="./style/import.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Lumen</title>
 </head>
 
 <body class="cart">
-    <nav data-aos="fade-up" data-aos-duration="800" class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="d-flex flex-grow-1">
             <a class="navbar-brand" href="#">
                 <img src="./image/logo-blanc.png">
@@ -54,45 +50,117 @@
             </ul>
         </div>
     </nav>
-    <div class="wrapper-retour">
-        <span class="green">
-            < </span> <a href="./catalogue.html">Retour au catalogue</a>
-    </div>
 
     <div data-aos="fade-up" data-aos-duration="800" class="wrapper-etapes">
-        <div class="firstStep"><img src="./image/panier-etape.png"> Mon panier <span class="arrow-right">></span></div>
-        <div><img src="./image/box.png"> Livraison & paiement <span class="arrow-right">></span></div>
+        <div><img src="./image/grey-etape.png"> Mon panier <span class="arrow-right">></span></div>
+        <div class="firstStep"><img src="./image/box-green.png"> Livraison & paiement <span class="arrow-right">></span>
+        </div>
         <div><img src="./image/recap.png"> Récapitulatif <span class="arrow-right">></span></div>
         <div><img src="./image/confirm.png"> Confirmation</div>
     </div>
 
-    <div class="wrapper-details">
+    <div class="wrapper-livraison">
         <div class="wrapper-h1">
-            <h1 data-aos="flip-down" data-aos-duration="800">Mon panier</h1>
+            <h1>
+                Livraison & paiement
+            </h1>
         </div>
-        <div class="wrapper">
-            <div class="inner-details shadow" data-aos="flip-right" data-aos-duration="800">
-                <div class="item">
-                    <img id="solar" src="./image/left-item.png">
-                    <div class="content">
-                        <p class="name">Lumen Charger</p>
-                        <div class="inner-content">
-                            <p class="price">119€</p>
-                            <p class="quantite">- <span class="number">1</span> + <img src="./image/trash.png"></p>
+        <div class="container-livraison">
+            <div class="first-part">
+                <div class="livraison shadow">
+                    <div class="wrapper-h2">
+                        <h2>Options de livraison</h2>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <div class="libelle-prix">
+                                <div>Livraison en point relais</div>
+                                <div>Gratuit</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="libelle-prix">
+                                <div>Livraison express en 24h</div>
+                                <div>5,95€</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="libelle-prix">
+                                <div>Livraison à domicile</div>
+                                <div>Gratuit</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="coordonnes shadow">
+                    <div class="wrapper-h2">
+                        <h2>Coordonnées</h2>
+                    </div>
+                    <form class="form-coordonnees">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Adresse email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Numéro de téléphone</label>
+                            <input type="number" class="form-control" id="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="livraison shadow">
+                    <div class="wrapper-h2">
+                        <h2>Mode de paiement</h2>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <div class="libelle-prix">
+                                <div>Paypal</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="libelle-prix">
+                                <div>Carte bancaire</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="securite shadow">
+                    <div class="paiement">
+                        <img src="./image/shield.png">
+                        <div>Paiement sécurisé garanti</div>
+                    </div>
+                    <div class="retour">
+                        <img src="./image/arrow-left.png" alt="">
+                        <div>Retours et échanges gratuits</div>
                     </div>
                 </div>
             </div>
-            <div class="sous-total shadow" data-aos="flip-left" data-aos-duration="800">
-                <h3>Sous-total</h3>
-                <div class="item-bought">
-                    <p>Lumen Charger <span class="bold">x1</span></p>
-                    <p class="price">119€</p>
-                </div>
-                <div class="total">
-                    <p class="price-total">119€</p>
-                    <p class="note">hors frais de livraison</p>
-                    <a class="btn" href="./paiement.html">Continuer</a>
+            <div class="second-part">
+                <div class="sous-total shadow">
+                    <div class="wrapper-h3">
+                        <h3>Sous-total</h3>
+                    </div>
+                    <div class="item-bought">
+                        <p>Lumen Charger <span class="bold">x1</span></p>
+                        <p class="price">119€</p>
+                    </div>
+                    <div class="total">
+                        <p class="price-total">119€</p>
+                        <p class="note">hors frais de livraison</p>
+                        <a class="btn" href="#!">Continuer</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,9 +247,7 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Footer -->
- <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
