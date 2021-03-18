@@ -9,6 +9,9 @@ body {
 span.bold {
   font-family: $font-airbnb-bold;
 }
+span.bold-medium {
+  font-family: $font-airbnb-medium;
+}
 
 @mixin btn-grey {
   background-color: $grey;
