@@ -274,7 +274,7 @@ body.homepage div.wrapper-header .wrapper-texte {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 268px;
+  margin-top: 178px;
 }
 
 @media screen and (max-width: 600px) {
@@ -299,12 +299,12 @@ body.homepage div.wrapper-header .wrapper-texte h2 {
 }
 
 body.homepage div.wrapper-header .wrapper-texte p {
-  width: 422px;
+  width: 580px;
   color: white;
-  font-size: 23px;
+  font-size: 18px;
   font-family: "Airbnb Cereal App Light";
   margin-top: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 140px;
 }
 
 @media screen and (max-width: 600px) {
@@ -319,6 +319,7 @@ body.homepage div.wrapper-header .wrapper-texte a {
   color: white;
   text-transform: uppercase;
   border-radius: 25px;
+  font-size: 22px;
   font-family: "Airbnb Cereal App Bold";
 }
 
@@ -330,26 +331,33 @@ body.homepage div.wrapper-header .wrapper-texte a {
   }
 }
 
-body.homepage div.wrapper-header .wrapper-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 190px;
+body.homepage div.wrapper-header .green-bean {
+  position: relative;
+}
+
+body.homepage div.wrapper-header .green-bean #first-solar {
+  position: absolute;
+  top: 250px;
+  left: 50px;
 }
 
 @media screen and (max-width: 600px) {
-  body.homepage div.wrapper-header .wrapper-image {
-    margin-top: 130px;
+  body.homepage div.wrapper-header .green-bean #first-solar {
+    height: 300px;
+    top: 250px;
+  }
+}
+
+body.homepage div.wrapper-header .green-bean #second-solar {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body.homepage div.wrapper-header .green-bean #second-solar {
+    height: 300px;
+    top: 130px;
   }
 }
 
@@ -421,6 +429,10 @@ body.homepage div.wrapper-nouveaute a {
   }
 }
 
+body.homepage div.wrapper-nouveaute .homepart {
+  margin-bottom: 230px;
+}
+
 body.homepage div.wrapper-nouveaute .homepart p {
   width: 420px;
   margin-top: 46px;
@@ -433,64 +445,22 @@ body.homepage div.wrapper-nouveaute .homepart p {
   }
 }
 
-body.homepage div.wrapper-nouveaute .green-bean {
-  background-image: url(../image/left-bean.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  position: relative;
-  height: 600px;
+body.homepage .wrapper-carousel {
+  margin-bottom: 250px;
+  /* the parent */
 }
 
-@media screen and (max-width: 600px) {
-  body.homepage div.wrapper-nouveaute .green-bean {
-    background-size: 300px 300px;
-  }
+body.homepage .wrapper-carousel .slick-slide {
+  margin: 0 27px;
+  opacity: 0.5;
 }
 
-body.homepage div.wrapper-nouveaute .green-bean #first-solar {
-  position: absolute;
-  top: 30px;
-  left: 50px;
+body.homepage .wrapper-carousel .slick-list {
+  margin: 0 -27px;
 }
 
-@media screen and (max-width: 600px) {
-  body.homepage div.wrapper-nouveaute .green-bean #first-solar {
-    height: 300px;
-    top: 250px;
-  }
-}
-
-body.homepage div.wrapper-nouveaute .green-bean #second-solar {
-  position: absolute;
-  top: 0;
-  right: 50px;
-}
-
-@media screen and (max-width: 600px) {
-  body.homepage div.wrapper-nouveaute .green-bean #second-solar {
-    height: 300px;
-    top: 130px;
-  }
-}
-
-body.homepage .btn-catalogue a {
-  width: 504px;
-  background-color: #3b413d;
-  border-radius: 25px;
-  color: white;
-  text-transform: uppercase;
-  font-size: 28px;
-  font-family: "Airbnb Cereal App Bold";
-  margin-top: 108px;
-  margin-bottom: 209px;
-}
-
-@media screen and (max-width: 600px) {
-  body.homepage .btn-catalogue a {
-    font-size: 15px;
-    width: 249px;
-    margin-bottom: 79px;
-  }
+body.homepage .wrapper-carousel .slick-center {
+  opacity: 1;
 }
 
 nav.navbar {
